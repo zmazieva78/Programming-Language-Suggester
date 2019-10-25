@@ -1,3 +1,38 @@
 .result {
   display: none;
+  font-size: 20px;
+  text-align: center;
+  border: ridge 5px #B1C4CC;
+  color: white;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+span {
+  font-weight: 600;
+  font-style: italic;
+  color: #1EEC6C;
+}
+#triggerButton {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    background-color: #D4DDE1;
+    color: black;
+    width: 200px;
+    height: 45px;
+}
+#triggerButton:hover {
+  background: blue;
+}
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+}
+#signtaure {
+  font-size: 11px;
+  font-family: monospace;
+}
+#underText {
+  font-family: comic;
 }
