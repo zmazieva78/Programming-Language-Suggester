@@ -17,67 +17,75 @@
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h3 class="modal-title" id="myModalLabel">Programming Language Suggester</h3>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                <h2 class="modal-title" id="myModalLabel">Programming Language Suggester</h2>
+              </div>
+              <div class="modal-body">
+            <!-- modalform input NAME -->
+                  <label for="name">Enter your name</label>
+                  <input id="name" type="text" class="form-control">
+              <!-- Start quiz -->
+                  <h3 class="modal-title" id="myModalLabel">Answer these questions</h3>
+              <!-- Quiz question form -->
+                <form>
+              <!-- Question 1 -->
+                  <h4>What is your favorite food?</h4>
+                  <div class="radio">
+                    <label><input type="radio" name="question1" value="1" checked>Steak with salad</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="question1" value="2">Burger and fries</label>
+                  </div>
+              <!-- Question21 -->
+                  <h4>Do you like hiking?</h4>
+                  <div class="radio">
+                    <label><input type="radio" name="question2" value="1" checked>Show me a place I haven't been to...</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="question2" value="2">Neah, I am couch potato</label>
+                  </div>
+              <!-- Question 3 -->
+                  <h4>What movie do you like?</h4>
+                  <div class="radio">
+                    <label><input type="radio" name="question3" value="1" checked>Matrix</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="question3" value="2">Titanic</label>
+                  </div>
+              <!-- Question 4 -->
+                  <h4>Where would you like to live?</h4>
+                  <div class="radio">
+                    <label><input type="radio" name="question4" value="1" checked>Noisy city, with a lots of restaurants and night life</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="question4" value="2">Village surrounded with farm land, horses, cows and corn fields</label>
+                  </div>
+              <!-- Question 5 -->
+                  <h4>How social are you?</h4>
+                  <div class="radio">
+                    <label><input type="radio" name="question5" value="1" checked>Leave me alone!</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="question5" value="2">Let's do team building!</label>
+                  </div>
+              <!-- Modal Footer -->
+                  <div class="modal-footer">
+                  <button id="modalSubmit" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                  </div>
+                </form>
+              </div>
             </div>
-            <div class="modal-body">
-          <!-- modalform input NAME -->
-              <label for="name">Enter your name</label>
-              <input id="name" type="text" class="form-control">
-          <!-- Start quiz -->
-              <h3 class="modal-title" id="myModalLabel">Answer these questions</h3>
-          <!-- Quiz question form -->
-            <form>
-          <!-- Question 1 -->
-              <h4>What is your favorite food?</h4>
-              <div class="radio">
-                <label><input type="radio" name="question1" value="1" checked>Steak with salad</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="question1" value="2">Burger and fries</label>
-              </div>
-          <!-- Question21 -->
-              <h4>Do you like hiking?</h4>
-              <div class="radio">
-                <label><input type="radio" name="question2" value="1" checked>Show me a place I haven't been to...</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="question2" value="2">Neah, I am couch potato</label>
-              </div>
-          <!-- Question 3 -->
-              <h4>What movie do you like?</h4>
-              <div class="radio">
-                <label><input type="radio" name="question3" value="1" checked>Matrix</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="question3" value="2">Titanic</label>
-              </div>
-          <!-- Question 4 -->
-              <h4>Where would you like to live?</h4>
-              <div class="radio">
-                <label><input type="radio" name="question4" value="1" checked>Noisy city, with a lots of unfriendly people</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="question4" value="2">Village surrounded with farm land, horses, cows and corn fields</label>
-              </div>
-          <!-- Question 5 -->
-              <h4>How social are you?</h4>
-              <div class="radio">
-                <label><input type="radio" name="question5" value="1" checked>Leave me alone!</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="question5" value="2">Let's do team building!</label>
-              </div>
-
-              <div class="modal-footer">
-              <button id="modalSubmit" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
-              </div>
-            </form>
-
+          </div>
+        </div>
+        <div class="result">
+          <p>Dear <span id="quizerName"></span>, we suggest you to learn <span id="quizerResult"></span>. think yowill have great success to achive better results in this programming language. If you thiotherwise, pleastry again to take our quiz.</p>
+          <p id="underText">P.S This Quiz is a joke, please dont take it seriosly.</p>
+          <p id="signtaure">Copyright (c) 2019 Zarina Mazieva</p>
+        </div>
       </div>
-  </body>
-</html>
+    </body>
+  </html>
