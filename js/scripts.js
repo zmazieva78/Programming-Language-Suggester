@@ -1,4 +1,8 @@
 $(function() {
+  // $("#triggerButton").click(function() {
+  //   $("#myModal").removeData();
+  // })
+
   $("#modalSubmit").click(function() {
 // Name input and radio buttons input stored in CONST in modal form
     const nameInput = $("#name").val();
