@@ -1,9 +1,13 @@
 
 $(function() {
-  var input = "";
+  var nameInput = "";
+  var results = "";
 
   $("#modalSubmit").click(function() {
-    input = $("#name").val()
+// Name input in module form
+    nameInput = $("#name").val();
+//This function is working, checked
+ 
 
 
 

@@ -22,19 +22,101 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Enter your name</h4>
+              <h3 class="modal-title" id="myModalLabel">Programming Language Suggester</h3>
             </div>
             <div class="modal-body">
-              <input id="name" type="text" class="form-control" placeholder="Text input">
+          <!-- modalform input NAME -->
+              <label for="name">Enter your name</label>
+              <input id="name" type="text" class="form-control">
+          <!-- Start quiz -->
+              <h3 class="modal-title" id="myModalLabel">Answer these questions</h3>
+          <!-- Question 1 -->
+              <h4>What is your favorite food?</h4>
+              <div class="answer1">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Burger with fries
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Steak with salad
+                  </label>
+                </div>
+              </div>
+          <!-- Question 2 -->
+              <h4>Do you like hiking?</h4>
+              <div class="answer2">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Show me a place I haven't been to...
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Neah, I am couch potato
+                  </label>
+                </div>
+              </div>
+          <!-- Question 3 -->
+              <h4>What movie do you like?</h4>
+              <div class="answer3">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Matrix
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Titanic
+                  </label>
+                </div>
+              </div>
+          <!-- Question 4 -->
+              <h4>Where would you like to live?</h4>
+              <div class="answer4">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Noisy city, with a lots of unfriendly people
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Village surrounded with farm land, horses, cows and corn fields.
+                  </label>
+                </div>
+              </div>
+          <!-- Question 5 -->
+              <h4>How social are you?</h4>
+              <div class="answer5">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Leave me alone!
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Let's do team building!
+                  </label>
+                </div>
+              </div>
             </div>
             <div class="modal-footer">
-              <button id="modalSubmit" type="button" class="btn btn-primary" data-dismiss="modal">Enter</button>
+              <button id="modalSubmit" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
             </div>
           </div>
         </div>
       </div>
-
-
     </div>
   </body>
 </html>
