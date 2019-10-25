@@ -36,3 +36,8 @@ body {
 #underText {
   font-family: comic;
 }
+#alert {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
