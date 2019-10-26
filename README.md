@@ -1,5 +1,5 @@
 ***Project name:***
-# Programming-Language-Suggester
+# Programming Language Suggester
 
 ***Author:***
 _Zarina Mazieva_
